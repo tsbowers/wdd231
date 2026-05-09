@@ -1,0 +1,63 @@
+
+   WDD 231 W01 Course Home Page
+
+@media screen and (min-width: 700px) {
+  #menu-button {
+    display: none;
+  }
+
+  header {
+    padding: 0.75rem 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    flex: 0 1 auto;
+    min-width: 150px;
+    text-align: center;
+    border-right: 1px solid #555;
+    border-bottom: none;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  h1 {
+    grid-column: 1 / -1;
+  }
+
+  .about-card {
+    grid-column: 1 / 2;
+  }
+
+  .photo-card {
+    grid-column: 2 / 3;
+  }
+
+  .certificate-card {
+    grid-column: 1 / -1;
+  }
+
+  .course-buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #course-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .profile-photo {
+  display: block;
+  width: min(45%, 150px);
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 6px;
+}
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 Home Page</title>
+    <meta name="author" content="Trevor Bowers">
+    <meta name="description" content="This is the home page for WDD 231.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="site-branding">
+      <img src="images/logo.svg" alt="Site logo" width="50" height="50">
+      <span>Trevor Bowers</span>
+    </div>
+    <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+  </header>
+
+  <nav id="nav-menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="#">Chamber Project</a>
+    <a href="#">Final Project</a>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="card about-card">
+      <h2>About Me</h2>
+      <p>
+        My name is Trevor Bowers. I am learning web development
+        This course home page will display my projects, and course work.
+      </p>
+    </section>
+
+  <section class="card photo-card">
+  <h2>Student Photo</h2>
+
+  <img src="images/Student.webp" alt="Photo of Trevor Bowers" class="profile-photo">
+</section>
+
+  
+
+    <section class="card certificate-card">
+      <h2>Web Certificate Courses</h2>
+      <div class="course-buttons">
+        <button id="all" type="button">All</button>
+        <button id="cse" type="button">CSE</button>
+        <button id="wdd" type="button">WDD</button>
+      </div>
+      <div id="course-container"></div>
+      <p id="credits"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+  <a href="https://www.linkedin.com/in/trevor-bowers-223b56148" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+    <img src="images/linkedin.jpg" alt="LinkedIn icon" width="44" height="44">
+  </a>
+  <a href="https://github.com/tsbowers/wdd231" target="_blank" rel="noopener" aria-label="GitHub repository">
+    <img src="images/github.png" alt="GitHub icon" width="44" height="44">
+  </a>
+  <a href="https://byui-cse.github.io/cse212-ww-course/index.html" target="_blank" rel="noopener" aria-label="CSE 212 course website">
+    <img src="images/school.png" alt="Course website icon" width="44" height="44">
+  </a>
+</div>
+    <p>&copy; <span id="currentyear"></span> • Trevor Bowers • United States</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
