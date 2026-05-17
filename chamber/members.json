@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Smoke 'N' Willie",
+    "address": "321 N Main Ave, Fayetteville, AR 72701",
+    "phone": "(479) 396-2831",
+    "website": "https://smokenwillie.com/",
+    "image": "bbq.jpg",
+    "membership": 3,
+    "description": "mouthwatering smoked meats and unique sandwiches"
+  },
+  {
+    "name": "The Buttered Biscuit",
+    "address": "1754 n College Ave, Fayetteville, AR 72703",
+    "phone": "(479) 380-0833",
+    "website": "https://thebutteredbiscuit.com/",
+    "image": "the-buttered-biscuit.webp",
+    "membership": 2,
+    "description": "serving scratch-made dishes with true Southern hospitality."
+  },
+  {
+    "name": "Green Valley Landscaping",
+    "address": "45 Garden Road, Riverbend, AR 72701",
+    "phone": "(555) 333-4444",
+    "website": "https://GreenValleyLandscaping.com",
+    "image": "green-valley.webp",
+    "membership": 1,
+    "description": "Residential and commercial landscaping services."
+  },
+  {
+    "name": "Bright Path Tutoring",
+    "address": "12 College Drive, Riverbend, AR 72701",
+    "phone": "(555) 444-5555",
+    "website": "https://BrightPathTutoring.com",
+    "image": "bright-path.webp",
+    "membership": 2,
+    "description": "Tutoring services for students of all ages."
+  },
+  {
+    "name": "Harbor Tech Solutions",
+    "address": "700 Innovation Way, Riverbend, AR 72701",
+    "phone": "(555) 555-6666",
+    "website": "https://HarborTechSolutions.com",
+    "image": "harbor-tech.webp",
+    "membership": 3,
+    "description": "IT support and web services for small businesses."
+  },
+  {
+    "name": "Oak & Ember Grill",
+    "address": "60 Market Street, Riverbend, AR 72701",
+    "phone": "(555) 666-7777",
+    "website": "https://oakandember.com",
+    "image": "oak-ember.webp",
+    "membership": 1,
+    "description": "Family restaurant serving grilled favorites."
+  },
+  {
+    "name": "Bluebird Books",
+    "address": "9 Library Lane, Riverbend, AR 72701",
+    "phone": "(555) 777-8888",
+    "website": "https://bluebirdbooks.com",
+    "image": "bluebird-books.webp",
+    "membership": 2,
+    "description": "Independent bookstore with community events."
+  }
+]
