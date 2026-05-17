@@ -13,7 +13,7 @@
     "address": "1754 n College Ave, Fayetteville, AR 72703",
     "phone": "(479) 380-0833",
     "website": "https://thebutteredbiscuit.com/",
-    "image": "the-buttered-biscuit",
+    "image": "the-buttered-biscuit.svg",
     "membership": 2,
     "description": "serving scratch-made dishes with true Southern hospitality."
   },
@@ -22,7 +22,7 @@
     "address": "45 Garden Road, Riverbend, AR 72701",
     "phone": "(555) 333-4444",
     "website": "https://GreenValleyLandscaping.com",
-    "image": "green-valley.webp",
+    "image": "green-valley.jpg",
     "membership": 1,
     "description": "Residential and commercial landscaping services."
   },
@@ -31,7 +31,7 @@
     "address": "12 College Drive, Riverbend, AR 72701",
     "phone": "(555) 444-5555",
     "website": "https://BrightPathTutoring.com",
-    "image": "bright-path.webp",
+    "image": "bright-path.jpg",
     "membership": 2,
     "description": "Tutoring services for students of all ages."
   },
@@ -40,7 +40,7 @@
     "address": "700 Innovation Way, Riverbend, AR 72701",
     "phone": "(555) 555-6666",
     "website": "https://HarborTechSolutions.com",
-    "image": "harbor-tech.webp",
+    "image": "harbor-tech.jpg",
     "membership": 3,
     "description": "IT support and web services for small businesses."
   },
@@ -49,7 +49,7 @@
     "address": "60 Market Street, Riverbend, AR 72701",
     "phone": "(555) 666-7777",
     "website": "https://oakandember.com",
-    "image": "oak-ember.webp",
+    "image": "oak-ember.jpg",
     "membership": 1,
     "description": "Family restaurant serving grilled favorites."
   },
@@ -58,7 +58,7 @@
     "address": "9 Library Lane, Riverbend, AR 72701",
     "phone": "(555) 777-8888",
     "website": "https://bluebirdbooks.com",
-    "image": "bluebird-books.webp",
+    "image": "bluebird-books.jpg",
     "membership": 2,
     "description": "Independent bookstore with community events."
   }
