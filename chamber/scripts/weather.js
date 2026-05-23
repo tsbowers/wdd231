@@ -1,9 +1,8 @@
-const apiKey = "YOUR_OPENWEATHERMAP_API_KEY";
+const apiKey = "56a0d36353825c25ef0bc5cd6f91fad6";
 
-// Replace these coordinates with your chamber city's latitude and longitude.
-// These are currently set to Salt Lake City, Utah.
-const lat = 40.7608;
-const lon = -111.8910;
+// Fayetteville, Arkansas
+const lat = 36.0626;
+const lon = -94.1574;
 
 const currentWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
