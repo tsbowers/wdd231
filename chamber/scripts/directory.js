@@ -15,7 +15,7 @@ menuButton.addEventListener("click", () => {
 const membersContainer = document.querySelector("#members");
 
 async function getMembers() {
-  const response = await fetch("members.json");
+  const response = await fetch("data/members.json");
   const members = await response.json();
 
   displayMembers(members);
