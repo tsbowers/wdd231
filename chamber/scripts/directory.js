@@ -1,27 +1,50 @@
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 
-currentYear.textContent = new Date().getFullYear();
-lastModified.textContent = document.lastModified;
+if (currentYear) {
+  currentYear.textContent = new Date().getFullYear();
+}
+
+if (lastModified) {
+  lastModified.textContent = `Last Modified: ${document.lastModified}`;
+}
 
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 
-menuButton.addEventListener("click", () => {
-  navigation.classList.toggle("open");
-  menuButton.classList.toggle("open");
-});
+if (menuButton && navigation) {
+  menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    menuButton.classList.toggle("open");
+  });
+}
 
 const membersContainer = document.querySelector("#members");
 
 async function getMembers() {
-  const response = await fetch("data/members.json");
-  const members = await response.json();
+  try {
+    const response = await fetch("data/members.json");
 
-  displayMembers(members);
+    if (!response.ok) {
+      throw new Error("Could not load members.json");
+    }
+
+    const members = await response.json();
+    displayMembers(members);
+  } catch (error) {
+    console.error(error);
+
+    if (membersContainer) {
+      membersContainer.innerHTML = "<p>Member information could not be loaded.</p>";
+    }
+  }
 }
 
 function displayMembers(members) {
+  if (!membersContainer) {
+    return;
+  }
+
   membersContainer.innerHTML = "";
 
   members.forEach((member) => {
@@ -48,6 +71,7 @@ function displayMembers(members) {
 
     website.href = member.website;
     website.target = "_blank";
+    website.rel = "noopener";
     website.textContent = "Visit Website";
 
     membership.textContent = `Membership Level: ${member.membership}`;
@@ -65,17 +89,21 @@ function displayMembers(members) {
   });
 }
 
-getMembers();
+if (membersContainer) {
+  getMembers();
+}
 
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
-gridButton.addEventListener("click", () => {
-  membersContainer.classList.add("grid");
-  membersContainer.classList.remove("list");
-});
+if (gridButton && listButton && membersContainer) {
+  gridButton.addEventListener("click", () => {
+    membersContainer.classList.add("grid");
+    membersContainer.classList.remove("list");
+  });
 
-listButton.addEventListener("click", () => {
-  membersContainer.classList.add("list");
-  membersContainer.classList.remove("grid");
-});
+  listButton.addEventListener("click", () => {
+    membersContainer.classList.add("list");
+    membersContainer.classList.remove("grid");
+  });
+}

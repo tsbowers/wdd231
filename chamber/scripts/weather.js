@@ -38,6 +38,10 @@ async function getWeather() {
 }
 
 function displayCurrentWeather(data) {
+  if (!currentWeather) {
+    return;
+  }
+
   const temperature = Math.round(data.main.temp);
   const description = data.weather[0].description;
   const icon = data.weather[0].icon;
@@ -53,13 +57,17 @@ function displayCurrentWeather(data) {
 }
 
 function displayForecast(data) {
+  if (!forecast) {
+    return;
+  }
+
   forecast.innerHTML = "";
 
   const dailyForecasts = data.list
-    .filter(item => item.dt_txt.includes("12:00:00"))
+    .filter((item) => item.dt_txt.includes("12:00:00"))
     .slice(0, 3);
 
-  dailyForecasts.forEach(day => {
+  dailyForecasts.forEach((day) => {
     const date = new Date(day.dt_txt);
     const dayName = date.toLocaleDateString("en-US", { weekday: "long" });
     const temperature = Math.round(day.main.temp);
@@ -76,7 +84,7 @@ function displayForecast(data) {
 }
 
 function capitalizeWords(text) {
-  return text.replace(/\b\w/g, letter => letter.toUpperCase());
+  return text.replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
 if (currentWeather && forecast) {

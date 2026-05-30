@@ -4,6 +4,8 @@
   --background-color: #f8f9fa;
   --text-color: #222222;
   --card-color: #ffffff;
+  --border-color: #dddddd;
+  --button-hover: #163a59;
 }
 
 * {
@@ -34,9 +36,15 @@ header {
   height: auto;
 }
 
-.site-branding span {
+.site-name {
+  display: block;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.site-tagline {
+  display: block;
+  font-size: 0.9rem;
 }
 
 #menu {
@@ -88,20 +96,35 @@ h1 {
   text-align: center;
 }
 
+/* Buttons */
+
+.button,
+.view-buttons button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.view-buttons button:hover {
+  background-color: var(--button-hover);
+}
+
 .view-buttons {
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .view-buttons button {
-  padding: 0.75rem 1rem;
   margin: 0.25rem;
-  border: none;
-  background-color: var(--primary-color);
-  color: white;
-  cursor: pointer;
-  border-radius: 6px;
 }
+
+/* Directory Page */
 
 .grid {
   display: grid;
@@ -111,7 +134,7 @@ h1 {
 
 .member-card {
   background-color: var(--card-color);
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
@@ -142,6 +165,176 @@ h1 {
   display: none;
 }
 
+/* Home Page */
+
+.hero {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  padding: 1rem;
+  background-color: var(--card-color);
+}
+
+.home-grid,
+.spotlight-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card,
+.spotlights {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Join Page */
+
+.join-layout {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.form-section,
+.membership-section,
+.thank-you {
+  max-width: 100%;
+}
+
+.join-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.join-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #777777;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.join-form input:required,
+.join-form select:required {
+  border-left: 6px solid var(--primary-color);
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+.join-form input[type="submit"] {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.join-form input[type="submit"]:hover {
+  background-color: var(--button-hover);
+}
+
+.membership-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.membership-card {
+  padding: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  background-color: var(--card-color);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.membership-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.membership-card:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.membership-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.membership-card:nth-child(4) {
+  animation-delay: 0.55s;
+}
+
+.membership-card h3 {
+  margin-top: 0;
+}
+
+.membership-card button,
+dialog button {
+  padding: 0.65rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.membership-card button:hover,
+dialog button:hover {
+  background-color: var(--button-hover);
+}
+
+dialog {
+  max-width: 500px;
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 35%);
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 60%);
+}
+
+/* Thank You Page */
+
+.results-card {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 700px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+}
+
+.results-card p {
+  margin: 0;
+}
+
+/* Footer */
+
 footer {
   background-color: var(--primary-color);
   color: white;
@@ -151,4 +344,18 @@ footer {
 
 footer h2 {
   font-size: 1.1rem;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

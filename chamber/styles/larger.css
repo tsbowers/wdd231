@@ -18,6 +18,35 @@
     padding: 1rem;
   }
 
+  .hero {
+    display: grid;
+  }
+
+  .hero picture,
+  .hero img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .hero-content {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    max-width: 600px;
+    background-color: rgb(255 255 255 / 90%);
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .home-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .spotlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -33,6 +62,13 @@
   .list .member-card p,
   .list .member-card a {
     margin: 0;
+  }
+
+  .join-layout {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
   footer {

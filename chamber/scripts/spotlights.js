@@ -11,7 +11,7 @@ async function getSpotlights() {
 
     const members = await response.json();
 
-    const qualifiedMembers = members.filter(member => {
+    const qualifiedMembers = members.filter((member) => {
       return member.membership === 2 || member.membership === 3;
     });
 
@@ -29,9 +29,13 @@ async function getSpotlights() {
 }
 
 function displaySpotlights(members) {
+  if (!spotlightContainer) {
+    return;
+  }
+
   spotlightContainer.innerHTML = "";
 
-  members.forEach(member => {
+  members.forEach((member) => {
     const card = document.createElement("section");
     card.classList.add("spotlight-card");
 
