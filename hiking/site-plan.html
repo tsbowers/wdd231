@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan for the NWA Hiking Guide with color schema, typography, and outline.">
+    <meta name="author" content="Trevor Bowers">
+    <title>NWA Hiking Guide Site Plan</title>
+    <style>
+    :root {
+        --forest-green: #2f5d3a;
+        --trail-brown: #8b5e34;
+        --cream: #f6f0df;
+        --sky-blue: #dceef2;
+        --charcoal: #24302a;
+        --white: #ffffff;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--cream);
+        color: var(--charcoal);
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: var(--forest-green);
+        color: var(--white);
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 2.25rem;
+    }
+
+    header p {
+        max-width: 700px;
+        margin: 0.75rem auto 0;
+    }
+
+    main {
+        width: min(1000px, 92%);
+        margin: 2rem auto;
+    }
+
+    section {
+        background-color: var(--white);
+        border-left: 8px solid var(--forest-green);
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        padding: 1.25rem;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+        color: var(--forest-green);
+        font-family: Georgia, "Times New Roman", serif;
+        margin-top: 0;
+    }
+
+    h3 {
+        color: var(--trail-brown);
+        margin-bottom: 0.5rem;
+    }
+
+    ul {
+        padding-left: 1.5rem;
+    }
+
+    .color-grid,
+    .typography-grid,
+    .wireframe-grid {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .color-card,
+    .font-card {
+        border: 2px solid var(--sky-blue);
+        border-radius: 8px;
+        padding: 1rem;
+        background-color: var(--sky-blue);
+    }
+
+    .swatch {
+        width: 100%;
+        height: 60px;
+        border-radius: 6px;
+        border: 1px solid var(--charcoal);
+        margin-bottom: 0.5rem;
+    }
+
+    .forest {
+        background-color: var(--forest-green);
+    }
+
+    .brown {
+        background-color: var(--trail-brown);
+    }
+
+    .cream {
+        background-color: var(--cream);
+    }
+
+    .blue {
+        background-color: var(--sky-blue);
+    }
+
+    .wireframe {
+        border: 3px solid var(--trail-brown);
+        background-color: var(--sky-blue);
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .wire-box {
+        border: 2px dashed var(--forest-green);
+        background-color: var(--cream);
+        color: var(--charcoal);
+        text-align: center;
+        padding: 0.75rem;
+        margin: 0.5rem 0;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .desktop-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 0.5rem;
+    }
+
+    .desktop-layout .full {
+        grid-column: 1 / -1;
+    }
+
+    footer {
+        background-color: var(--trail-brown);
+        color: var(--white);
+        padding: 1rem;
+        text-align: center;
+    }
+
+    @media (min-width: 700px) {
+        .color-grid,
+        .typography-grid,
+        .wireframe-grid {
+        grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    </style>
+    </head>
+    <body>
+    <header>
+    <h1>NWA Hiking Guide Site Plan</h1>
+    <p>A website plan for a guide that helps users find hikes, check weather, and prepare in Northwest Arkansas.</p>
+    </header>
+
+    <main>
+    <section>
+        <h2>Site Name</h2>
+        <p><strong>NWA Hiking Guide</strong></p>
+        <p>This name was selected because it identifies both the location and the purpose of the website. “NWA” stands for Northwest Arkansas, and “Hiking Guide” tells that the site is about hiking.</p>
+        <p><strong>Optional domain idea:</strong> nwahikingguide.com</p>
+    </section>
+
+    <section>
+        <h2>Site Purpose</h2>
+        <p>The purpose of the NWA Hiking Guide website is to help find hiking trails in Northwest Arkansas. The site will have a home page with a featured rotating hike and current weather information, a trail list page with popular hikes that can be sorted by length and difficulty, and a trail guide page with tips about what to bring and how to prepare before hiking.</p>
+    </section>
+
+    <section>
+        <h2>Scenarios</h2>
+        <ul>
+        <li>What are some popular hikes near Northwest Arkansas that match my experience level?</li>
+        <li>What should I bring with me before going on a hike?</li>
+        <li>What is the weather like before I head out to a trail?</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Color Schema</h2>
+        <div class="color-grid">
+        <div class="color-card">
+            <div class="swatch forest"></div>
+            <h3>Forest Green - #2f5d3a</h3>
+            <p>Used for the header, section headings, borders, navigation, buttons, and important accents. This color connects the design to forests, trails, and outdoor exploration.</p>
+        </div>
+        <div class="color-card">
+            <div class="swatch brown"></div>
+            <h3>Trail Brown - #8b5e34</h3>
+            <p>Used for secondary headings, footer, and supporting accents.</p>
+        </div>
+        <div class="color-card">
+            <div class="swatch cream"></div>
+            <h3>Warm Cream - #f6f0df</h3>
+            <p>Used for the main page background and wireframe content areas.</p>
+        </div>
+        <div class="color-card">
+            <div class="swatch blue"></div>
+            <h3>Light Sky Blue - #dceef2</h3>
+            <p>Used for cards, highlight areas, and wireframe backgrounds.</p>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Typography</h2>
+        <div class="typography-grid">
+        <div class="font-card">
+            <h3>Georgia</h3>
+            <p style="font-family: Georgia, 'Times New Roman', serif;">Georgia will be used for the main site title and section headings.</p>
+        </div>
+        <div class="font-card">
+            <h3>Arial</h3>
+            <p>Arial will be used for body text, navigation links, cards, trail descriptions.</p>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Website Content Plan</h2>
+        <h3>Page 1: Home Page</h3>
+        <p>The home page will introduce the NWA Hiking Guide, display a rotating featured hike, show weather information, and guide users to the trail list and preparation pages.</p>
+
+        <h3>Page 2: Popular Hikes</h3>
+        <p>This page will display at least fifteen hikes from a JSON data source. Each hike will include trail name, location, difficulty, length. Users will be able to sort or filter hikes by length and difficulty.</p>
+
+        <h3>Page 3: Trail Guide</h3>
+        <p>This will help users prepare for hiking by listing items to bring, and friendly planning advice.</p>
+    </section>
+
+    <section>
+        <h2>Wireframes</h2>
+        <div class="wireframe-grid">
+        <div>
+            <h3>Mobile Home Page Wireframe</h3>
+            <div class="wireframe">
+            <div class="wire-box">Header / Logo</div>
+            <div class="wire-box">Hamburger Navigation</div>
+            <div class="wire-box">Hero Image / Welcome Message</div>
+            <div class="wire-box">Rotating Featured Hike</div>
+            <div class="wire-box">Weather Card</div>
+            <div class="wire-box">Links to Trail List and Trail Guide</div>
+            <div class="wire-box">Footer with Attributions and Video Link</div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Desktop Home Page Wireframe</h3>
+            <div class="wireframe desktop-layout">
+            <div class="wire-box full">Header / Logo / Horizontal Navigation</div>
+            <div class="wire-box full">Hero Image with Welcome Message</div>
+            <div class="wire-box">Rotating Featured Hike</div>
+            <div class="wire-box">Weather Card</div>
+            <div class="wire-box">Trail List Preview</div>
+            <div class="wire-box">Trail Guide Preview</div>
+            <div class="wire-box full">Footer with Attributions and Video Link</div>
+            </div>
+        </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+    <p>&copy; 2026 NWA Hiking Guide | Site Plan | Trevor Bowers</p>
+    </footer>
+    </body>
+    </html>
