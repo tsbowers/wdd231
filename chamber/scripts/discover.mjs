@@ -7,19 +7,23 @@ const lastModified = document.querySelector("#lastModified");
 const visitMessage = document.querySelector("#visit-message");
 const discoverCards = document.querySelector("#discover-cards");
 
-currentYear.textContent = new Date().getFullYear();
+if (currentYear) {
+  currentYear.textContent = new Date().getFullYear();
+}
 
 if (lastModified) {
   lastModified.textContent = `Last Modified: ${document.lastModified}`;
 }
 
-menuButton.addEventListener("click", () => {
-  menuButton.classList.toggle("open");
-  navigation.classList.toggle("open");
+if (menuButton && navigation) {
+  menuButton.addEventListener("click", () => {
+    menuButton.classList.toggle("open");
+    navigation.classList.toggle("open");
 
-  const isOpen = navigation.classList.contains("open");
-  menuButton.setAttribute("aria-expanded", isOpen);
-});
+    const isOpen = navigation.classList.contains("open");
+    menuButton.setAttribute("aria-expanded", isOpen);
+  });
+}
 
 function displayVisitMessage() {
   const lastVisit = localStorage.getItem("lastVisit");
@@ -44,6 +48,12 @@ function displayVisitMessage() {
 }
 
 function buildDiscoverCards(items) {
+  if (!discoverCards) {
+    return;
+  }
+
+  discoverCards.innerHTML = "";
+
   items.forEach((item, index) => {
     const card = document.createElement("article");
     card.classList.add("discover-card");
@@ -84,5 +94,8 @@ function buildDiscoverCards(items) {
   });
 }
 
-displayVisitMessage();
+if (visitMessage) {
+  displayVisitMessage();
+}
+
 buildDiscoverCards(discoverItems);

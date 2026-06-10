@@ -345,8 +345,7 @@ dialog::backdrop {
   color: white;
   background:
     linear-gradient(rgb(31 78 121 / 80%), rgb(31 78 121 / 80%)),
-    url("../images/discover/fayetteville-square.webp") center / cover no-repeat;
-}
+url("../images/fayetteville-square.jpg") center / cover no-repeat;}
 
 .discover-hero div {
   grid-area: discover-hero-content;
