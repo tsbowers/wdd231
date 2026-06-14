@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Northwest Arkansas hiking trails, weather conditions, and featured hikes.">
+    <meta name="author" content="Trevor Bowers">
+
+<meta property="og:title" content="NWA Hiking Guide">
+<meta property="og:description" content="Discover hiking trails and outdoor adventures in Northwest Arkansas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/favicon.webp">
+
+<link rel="icon" href="images/favicon.webp">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/base.css">
+
+<script type="module" src="scripts/main.js"></script>
+<script type="module" src="scripts/weather.js"></script>
+
+<title>NWA Hiking Guide | Home</title>
+
+</head>
+
+<body>
+<header>
+    <div class="header-container">
+        <h1>NWA Hiking Guide</h1>
+
+    <button id="menu-button" aria-label="Open navigation menu">
+        ☰
+    </button>
+</div>
+
+<nav id="site-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="hikes.html">Popular Hikes</a>
+    <a href="guide.html">Trail Guide</a>
+</nav>
+
+
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Explore Northwest Arkansas Trails</h2>
+
+
+        <p>
+            Discover scenic overlooks, waterfalls, wooded trails,
+            and outdoor adventures throughout Northwest Arkansas.
+        </p>
+
+        <a href="hikes.html" class="button">
+            Browse Trails
+        </a>
+    </div>
+
+    <div class="hero-image">
+    <img
+        src="images/favicon.webp"
+        alt="NWA Hiking Logo"
+        class="featured-image"
+    >
+    </div>
+</section>
+
+<section class="home-grid">
+    <article class="featured-card">
+        <h2>Hike of the Day</h2>
+
+        <div id="featured-hike">
+            <p>Loading today's featured hike...</p>
+        </div>
+    </article>
+
+    <article class="weather-card" id="weather-card">
+        <h2>Current Weather</h2>
+        <p>Loading weather information...</p>
+    </article>
+</section>
+
+<section class="quick-links">
+    <article class="info-card">
+        <h2>Popular Hikes</h2>
+
+        <p>
+            Browse a collection of local trails and sort them by
+            difficulty or length.
+        </p>
+
+        <a href="hikes.html" class="button">
+            View Trails
+        </a>
+    </article>
+
+    <article class="info-card">
+        <h2>Trail Guide</h2>
+
+        <p>
+            Learn what to bring, how to prepare,
+            and how to stay safe while hiking.
+        </p>
+
+        <a href="guide.html" class="button">
+            View Guide
+        </a>
+    </article>
+</section>
+
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Trevor Bowers | NWA Hiking Guide</p>
+
+<p>
+    <a href="attributions.html">Attributions</a> |
+    <a href="#">Video Demonstration</a>
+</p>
+
+</footer>
+</body>
+</html>

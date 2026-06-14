@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to prepare for hiking adventures in Northwest Arkansas with safety tips and packing recommendations.">
+    <meta name="author" content="Trevor Bowers">
+
+<meta property="og:title" content="NWA Hiking Guide - Trail Guide">
+<meta property="og:description" content="Trail preparation tips, safety information, and hiking essentials.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.webp">
+
+<link rel="icon" href="images/favicon.webp">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/base.css">
+
+<script type="module" src="scripts/main.js"></script>
+
+<title>NWA Hiking Guide | Trail Guide</title>
+
+</head>
+
+<body>
+<header>
+    <div class="header-container">
+        <h1>NWA Hiking Guide</h1>
+
+    <button id="menu-button" aria-label="Open navigation menu">
+        ☰
+    </button>
+</div>
+
+<nav id="site-nav">
+    <a href="index.html">Home</a>
+    <a href="hikes.html">Popular Hikes</a>
+    <a href="guide.html" class="active">Trail Guide</a>
+</nav>
+
+</header>
+
+<main>
+    <section class="page-banner">
+        <h2>Trail Preparation Guide</h2>
+
+    <p>
+        A little preparation can make your hiking experience safe,
+        more enjoyable, and more comfortable.
+    </p>
+</section>
+
+<section class="guide-grid">
+    <article class="info-card">
+        <h2>What to Bring</h2>
+
+        <ul>
+            <li>Water bottle or hydration pack</li>
+            <li>Trail snacks</li>
+            <li>Comfortable hiking shoes</li>
+            <li>Small first aid kit</li>
+            <li>Weather-appropriate clothing</li>
+            <li>Sunscreen and bug spray</li>
+            <li>Phone or trail map</li>
+        </ul>
+    </article>
+
+    <article class="info-card">
+        <h2>Before You Go</h2>
+
+        <ul>
+            <li>Check weather conditions</li>
+            <li>Tell someone your plans</li>
+            <li>Research trail difficulty</li>
+            <li>Bring enough water</li>
+            <li>Charge your phone</li>
+            <li>Start early when possible</li>
+            <li> Bring Someone with you when possible</li>
+        </ul>
+    </article>
+
+    <article class="info-card">
+        <h2>Trail Etiquette</h2>
+
+        <ul>
+            <li>Stay on marked trails</li>
+            <li>Pack out all trash</li>
+            <li>Respect wildlife</li>
+            <li>Yield appropriately on trails</li>
+            <li>Keep noise levels low</li>
+            <li>Leave nature as you found it</li>
+            <li> More info can be found at 
+                <a href="https://www.scouting.org/health-and-safety/safety-moments/hiking/">Scouting Hiking Safety</a>
+            </li>
+        </ul>
+    </article>
+</section>
+
+<section class="form-section">
+    <h2>Create Your Hiking Plan</h2>
+
+    <form method="get" action="form-action.html">
+        <label for="name">Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required
+        >
+
+        <label for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+        >
+
+        <label for="difficulty">
+            Preferred Difficulty
+        </label>
+
+        <select
+            id="difficulty"
+            name="difficulty"
+            required
+        >
+            <option value="">Select Difficulty</option>
+            <option value="Easy">Easy</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Hard">Hard</option>
+        </select>
+
+        <label for="trail-type">
+            Favorite Trail Type
+        </label>
+
+        <select
+            id="trail-type"
+            name="trailType"
+            required
+        >
+            <option value="">Select Type</option>
+            <option value="Waterfall">Waterfall</option>
+            <option value="Forest">Forest</option>
+            <option value="Lake">Lake</option>
+            <option value="Overlook">Overlook</option>
+        </select>
+
+        <label for="comments">
+            Trip Notes
+        </label>
+
+        <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+        ></textarea>
+
+        <button type="submit">
+            Submit Hiking Plan
+        </button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Trevor Bowers | NWA Hiking Guide</p>
+
+<p>
+    <a href="attributions.html">Attributions</a> |
+    <a href="#">Video Demonstration</a>
+</p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Whitaker Point Trail",
+    "location": "Ozark National Forest",
+    "difficulty": "moderate",
+    "length": 2.9,
+    "time": "2 hours",
+    "type": "scenic overlook",
+    "description": "A popular trail leading to one of Arkansas's most photographed overlooks.",
+    "image": "images/whitakerpoint.jpg"
+  },
+  {
+    "name": "Tanyard Creek Nature Trail",
+    "location": "Bella Vista",
+    "difficulty": "easy",
+    "length": 2.2,
+    "time": "1.5 hours",
+    "type": "waterfall",
+    "description": "A peaceful loop trail with creek views, bridges, and a waterfall.",
+    "image": "images/tanyardcreek.jpg"
+  },
+  {
+    "name": "Lake Fayetteville Trail",
+    "location": "Fayetteville",
+    "difficulty": "easy",
+    "length": 5.5,
+    "time": "2.5 hours",
+    "type": "lake loop",
+    "description": "A paved and natural-surface loop around Lake Fayetteville.",
+    "image": "images/fayettevillelake.jpg"
+  },
+  {
+    "name": "Devil's Den Yellow Rock Trail",
+    "location": "Devil's Den State Park",
+    "difficulty": "moderate",
+    "length": 3.1,
+    "time": "2 hours",
+    "type": "overlook",
+    "description": "A classic state park hike with bluff views and forest scenery.",
+    "image": "images/devilsden.jpg"
+  },
+  {
+    "name": "Mount Kessler Trails",
+    "location": "Fayetteville",
+    "difficulty": "moderate",
+    "length": 4.0,
+    "time": "2 hours",
+    "type": "forest",
+    "description": "A network of wooded trails near Fayetteville with rocky sections.",
+    "image": "images/mountkessler.jpg"
+  },
+  {
+    "name": "Coler Mountain Trails",
+    "location": "Bentonville",
+    "difficulty": "moderate",
+    "length": 3.5,
+    "time": "2 hours",
+    "type": "multi-use",
+    "description": "A popular Bentonville trail area with forest paths and bike trails.",
+    "image": "images/colermountain.jpg"
+  },
+  {
+    "name": "Slaughter Pen Trails",
+    "location": "Bentonville",
+    "difficulty": "moderate",
+    "length": 4.8,
+    "time": "2.5 hours",
+    "type": "multi-use",
+    "description": "A well-known trail system with wooded paths and urban access.",
+    "image": "images/slaughterpen.jpg"
+  },
+  {
+    "name": "Blowing Springs Trail",
+    "location": "Bella Vista",
+    "difficulty": "easy",
+    "length": 3.8,
+    "time": "2 hours",
+    "type": "spring",
+    "description": "A scenic trail area with springs, rock formations, and shaded paths.",
+    "image": "images/blowingsprings.jpg"
+  },
+  {
+    "name": "Hobbs State Park Pigeon Roost Trail",
+    "location": "Rogers",
+    "difficulty": "hard",
+    "length": 8.4,
+    "time": "4 hours",
+    "type": "lake forest",
+    "description": "A longer trail through wooded areas near Beaver Lake.",
+    "image": "images/pigeonroost.jpg"
+  },
+  {
+    "name": "Shaddox Hollow Trail",
+    "location": "Rogers",
+    "difficulty": "moderate",
+    "length": 1.5,
+    "time": "1 hour",
+    "type": "forest",
+    "description": "A short wooded hike near Beaver Lake with quiet scenery.",
+    "image": "images/shaddoxhollow.jpg"
+  },
+  {
+    "name": "Fitzgerald Mountain Trail",
+    "location": "Springdale",
+    "difficulty": "moderate",
+    "length": 3.0,
+    "time": "1.5 hours",
+    "type": "ridge",
+    "description": "A growing trail area with forested ridges and natural terrain.",
+    "image": "images/fitzgerald.jpg"
+  },
+  {
+    "name": "Kessler Rock City Trail",
+    "location": "Fayetteville",
+    "difficulty": "moderate",
+    "length": 2.7,
+    "time": "1.5 hours",
+    "type": "rock formations",
+    "description": "A rocky forest trail with natural stone features.",
+    "image": "images/kesslerrockcity.jpg"
+  },
+  {
+    "name": "Lake Atalanta Trail",
+    "location": "Rogers",
+    "difficulty": "easy",
+    "length": 1.8,
+    "time": "1 hour",
+    "type": "lake loop",
+    "description": "A family-friendly loop near the lake with easy access.",
+    "image": "images/atalanta.jpg"
+  },
+  {
+    "name": "Crystal Bridges Trails",
+    "location": "Bentonville",
+    "difficulty": "easy",
+    "length": 2.0,
+    "time": "1 hour",
+    "type": "art and nature",
+    "description": "A trail system connecting outdoor art, forest paths, and museum grounds.",
+    "image": "images/crystalbridges.jpg"
+  },
+  {
+    "name": "Back 40 Trails",
+    "location": "Bella Vista",
+    "difficulty": "hard",
+    "length": 6.0,
+    "time": "3 hours",
+    "type": "backcountry",
+    "description": "A larger trail network with longer routes, elevation changes, and wooded terrain.",
+    "image": "images/back40.jpg"
+  }
+]

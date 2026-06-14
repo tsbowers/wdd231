@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse popular Northwest Arkansas hiking trails and sort them by difficulty and trail length.">
+    <meta name="author" content="Trevor Bowers">
+
+<meta property="og:title" content="NWA Hiking Guide - Popular Hikes">
+<meta property="og:description" content="Explore hiking trails across Northwest Arkansas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.webp">
+
+<link rel="icon" href="images/favicon.webp">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/base.css">
+
+<script type="module" src="scripts/main.js"></script>
+<script type="module" src="scripts/hikes.js"></script>
+
+<title>NWA Hiking Guide | Popular Hikes</title>
+
+</head>
+
+<body>
+<header>
+    <div class="header-container">
+        <h1>NWA Hiking Guide</h1>
+
+    <button id="menu-button" aria-label="Open navigation menu">
+        ☰
+    </button>
+</div>
+
+<nav id="site-nav">
+    <a href="index.html">Home</a>
+    <a href="hikes.html" class="active">Popular Hikes</a>
+    <a href="guide.html">Trail Guide</a>
+</nav>
+
+</header>
+
+<main>
+    <section class="page-banner">
+        <h2>Popular Northwest Arkansas Hikes</h2>
+
+    <p>
+        Browse local trails and find hikes that match
+        your preferred difficulty and distance.
+    </p>
+</section>
+
+<section class="controls">
+    <div>
+        <label for="difficulty">Filter by Difficulty</label>
+
+        <select id="difficulty">
+            <option value="all">All</option>
+            <option value="easy">Easy</option>
+            <option value="moderate">Moderate</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="sort">Sort by Length</label>
+
+        <select id="sort">
+            <option value="default">Default</option>
+            <option value="shortest">Shortest First</option>
+            <option value="longest">Longest First</option>
+        </select>
+    </div>
+</section>
+
+<section>
+    <h2>Trail List</h2>
+
+    <div id="trail-cards" class="trail-grid">
+        <p>Loading trails...</p>
+    </div>
+</section>
+
+<dialog id="trail-dialog">
+    <div id="dialog-content"></div>
+
+    <button id="close-dialog">
+        Close
+    </button>
+</dialog>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Trevor Bowers | NWA Hiking Guide</p>
+
+<p>
+    <a href="attributions.html">Attributions</a> |
+    <a href="#">Video Demonstration</a>
+</p>
+
+</footer>
+</body>
+</html>
